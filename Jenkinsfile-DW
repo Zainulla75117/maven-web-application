@@ -33,7 +33,7 @@ stages{
 
 //Uploading To SonarQube
 
-    stage('GeneratingSonarQubeReport'){
+  /*  stage('GeneratingSonarQubeReport'){
     steps{
          sh "mvn clean sonar:sonar"
     }
@@ -55,7 +55,7 @@ stages{
           sh "scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.35.42:/opt/apache-tomcat-9.0.86/webapps/"
              }
         }
-    }
+    } */
 }//stages close
 
 post {
