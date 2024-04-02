@@ -5,27 +5,21 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>3.0.0</version>
 	
 	<name>maven-web-application</name>
 
 	<description>Maven Web Project for Java Project</description>
 
-	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
-	</organization>
-
 	<properties>
-		<jdk.version>1.8</jdk.version>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://18.138.81.149:9000/</sonar.host.url>
-		<sonar.login>squ_48a1a411b9c83449e87ca2227382c1a5857b6236</sonar.login>
-	<!--	<sonar.password></sonar.password> -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		        <jdk.version>1.8</jdk.version>
+                <spring.version>5.1.2.RELEASE</spring.version>
+                <junit.version>4.11</junit.version>
+                <log4j.version>1.2.17</log4j.version>
+                <sonar.host.url>http://172.31.13.157:9000</sonar.host.url>
+                <sonar.login>squ_48a1a411b9c83449e87ca2227382c1a5857b6236</sonar.login>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
 
@@ -95,17 +89,17 @@
 	
 	<distributionManagement>
 	
-	    <repository>
+	     <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-release/</url>
+	      <name>Zain-release</name>
+	      <url>http://172.31.14.87:7032/zain/repository/Zain-release/</url>
 	    </repository>
 	    
-	    <snapshotRepository>
+	   <!-- <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
-	    </snapshotRepository>
+	    </snapshotRepository> -->
 	    
 	</distributionManagement>
 	
