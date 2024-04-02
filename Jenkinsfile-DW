@@ -1,10 +1,10 @@
 pipeline{
 
-parameters {
+/*parameters {
   choice choices: ['master', 'development', 'stage'], description: 'Plz Select Branch....', name: 'BranchName'
   string defaultValue: 'Zainulla', description: 'Enter Your Name...', name: 'UserName'
 }
-
+*/
 
 agent any
 
@@ -16,7 +16,7 @@ stages{
     stage('CheckoutCode'){
     steps{
         sendSlackNotification("STARTED")  
-     git branch: "${params.BranchName}" , credentialsId: '5bea97a5-1d05-46ad-bfc8-6e055e1d9ef8', url: 'https://github.com/Zainulla75117/Zain-Portfolio-Pom.xml.git'
+     git credentialsId: '5bea97a5-1d05-46ad-bfc8-6e055e1d9ef8', url: 'https://github.com/Zainulla75117/maven-web-application.git'
      
      sh "echo Run by User: ${params.UserName}"
          }
@@ -55,7 +55,7 @@ stages{
           sh "scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.35.42:/opt/apache-tomcat-9.0.86/webapps/"
              }
         }
-    }
+    } 
 }//stages close
 
 post {
