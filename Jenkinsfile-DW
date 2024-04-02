@@ -16,7 +16,7 @@ stages{
     stage('CheckoutCode'){
     steps{
         sendSlackNotification("STARTED")  
-     git branch: '', url: 'https://github.com/Zainulla75117/maven-web-application.git'
+     git credentialsId: '5bea97a5-1d05-46ad-bfc8-6e055e1d9ef8', url: 'https://github.com/Zainulla75117/maven-web-application.git'
      
      sh "echo Run by User: ${params.UserName}"
          }
