@@ -1,10 +1,10 @@
 pipeline{
 
-*/parameters {
+/*parameters {
   choice choices: ['master', 'development', 'stage'], description: 'Plz Select Branch....', name: 'BranchName'
   string defaultValue: 'Zainulla', description: 'Enter Your Name...', name: 'UserName'
 }
-/*
+*/
 
 agent any
 
